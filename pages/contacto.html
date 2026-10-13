@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/styles.css" />
 </head>
+
+
+<! --------------------------------------------------------------------------  >
+<!                                 BODY                                        >
+<! --------------------------------------------------------------------------  >
+
 <body>
+
+  <! ----- Encabezado ------ >
+
     <header>
-    <nav><a href = "../index.html">NOMBRE SITIO </a></nav>
-    <nav><a href = "../pages/carrito.html">Carrito</a></nav>
-    <nav><a href = "./contacto.html">Contacto</a></nav>
+    <nav><a class = "header__text" href = "../index.html">NOMBRE SITIO </a></nav>
+    <nav><a class = "header__text" href = "../pages/carrito.html">Carrito</a></nav>
+    <nav><a class = "header__text" href = "./contacto.html">Contacto</a></nav>
+
 </header>
 
-<h4> Contactenos con sus preguntas</h4>
+
+
+<! ----- Cuerpo ------- >
+
+<h4> Contactanos con tus preguntas</h4>
 
 <form
+  class="form"
   action="https://formspree.io/f/xeaerknj"
   method="POST"
 >
 
 <div>
-<label for="nombre">Nombre:</label>
+<label class="form__label" for="nombre">Nombre:</label>
 <input 
+class="form__textarea"
 id="nombre"
 name="nombre"
 type="text"
@@ -31,8 +50,9 @@ required
 </div>  
 
 <div>
-<label for="apellido">Apellido:</label>
+<label class="form__label" for="apellido">Apellido:</label>
 <input 
+class="form__textarea"
 id="apellido"
 name="apellido"
 type="text"
@@ -42,8 +62,9 @@ required
 </div>  
 
 <div>
-<label for="email">Correo electronico:</label>
+<label class="form__label" for="email">Correo electronico:</label>
 <input 
+class="form__input"
 id="email"
 name="email"
 type="email"
@@ -54,7 +75,7 @@ required
 
 
 <div>
-<label for="motivo">Motivo:</label>
+<label class="form__label" for="motivo">Motivo:</label>
 <select id="motivo" name="motivo"> 
 <option value=""> - Selecciona una opcion - </option>
 <option value="consulta"> Consulta </option>
@@ -65,15 +86,26 @@ required
 </div> 
 
 <div>
-  <label>
+  <label class="form__label">
     Tu mensaje:
-    <textarea name="message"></textarea>
+    <textarea 
+    class="form__textarea"
+    name="message">
+    </textarea>
   </label>
   </div> 
 
 
-  <button type="submit">Enviar</button>
+  <button class ="btn" type="submit">Enviar</button>
 </form>
+
+
+<! ----- Pie de pagina ------ >
+<footer> 
+    <nav><a class = "footer__text"> Copyright 2026 </a></nav>
+</footer>
+
+
 
 </body>
 </html>

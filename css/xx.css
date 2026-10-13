@@ -1,0 +1,169 @@
+/* Afecta a todo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+body {
+    background: #e2eff4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: cover;
+  height: 100vh;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          config para  1rem = 10px                          */
+/* -------------------------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+}
+
+
+header {
+  background-color: rgb(102, 176, 205);
+}
+
+
+/* selector de etiqueta: afecta a todas las etiquetas de un tipo */
+footer {
+  background-color: rgb(1, 4, 82);
+}
+
+/* aunque violeta pisa al azul, si tiene important, aplicara azul */
+.parrafo {
+  color: blue !important;
+}
+
+.seccion-1 {
+  border: solid red;
+  width: 100%;
+}
+.seccion-2 {
+  border: solid blue;
+  width: 50%;
+  /* height: 10rem; */
+  /* overflow: hidden; */
+}
+
+.parrafo {
+  color: blueviolet;
+  font-size: 42px;
+
+  /* cursor */
+  cursor: pointer;
+
+  /* mantiene el espacio que ocupa el elemento */
+  /* visibility: hidden; */
+
+  /* DISPLAY: cómo se muestra un elemento: block, inline, inline-block, none */
+  /* none: su particularidad es que no muestra el elemento ni tampoco ocupa el espacio */
+  /* display: none; */
+}
+
+.parrafo-2 {
+  color: rgb(92, 92, 233);
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  /* si el reset nos saca las viñetas, pero las queremos */
+  /* list-style-position: inside; */
+}
+
+ul a {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  medida em                                 */
+/* -------------------------------------------------------------------------- */
+.padre {
+  font-size: 20px; /* tamaño base del padre */
+}
+
+.hijo {
+  font-size: 1.5em; /* 1.5 × 20px = 30px */
+}
+
+/* -------------------------------------------------------------------------- */
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #f9f9f9;
+}
+
+.bg-primario {
+  background-color: #4f46e5;
+}
+.bg-secundario {
+  background-color: #6b7280;
+}
+.danger {
+  background-color: #ef4444;
+}
+#titulo-footer {
+  color: rgba(219, 105, 231, 0.98);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                Estilos Form                                */
+/* -------------------------------------------------------------------------- */
+.form {
+  width: 50%;
+  background-color: #f9f9f9;
+
+  border-radius: 8px;
+}
+
+.form__label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+
+  /* para que ocupe el ancho y el input se vaya para abajo */
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form__input,
+.form__textarea {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #3f51b5;
+  font-size: 16px;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border-bottom-color: #303f9f; /* azul más oscuro al enfocar */
+
+  /* para que no me muestre el delineado completo del input al enfocar */
+  /* outline: none; */
+}
+
+.form__button {
+  background: #303f9f; /* azul fuerte */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+

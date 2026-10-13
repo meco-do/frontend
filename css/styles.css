@@ -1,4 +1,7 @@
-/* Afecta a todo */
+/* --------------- */
+/* Formato general */
+/* --------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,91 +10,24 @@
 }
 
 body {
-  background-image: url("../img/pexels-padrinan-255379.jpg");
+    background: #e2eff4;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: cover;
   height: 100vh;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                          config para  1rem = 10px                          */
-/* -------------------------------------------------------------------------- */
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
-header {
-  background-color: mediumaquamarine;
-}
-
-/* selector de etiqueta: afecta a todas las etiquetas de un tipo */
-footer {
-  background-color: darksalmon;
-}
-
-/* aunque violeta pisa al azul, si tiene important, aplicara azul */
-.parrafo {
-  color: blue !important;
-}
-
-.seccion-1 {
-  border: solid red;
-  width: 100%;
-}
-.seccion-2 {
-  border: solid blue;
-  width: 50%;
-  /* height: 10rem; */
-  /* overflow: hidden; */
-}
-
-.parrafo {
-  color: blueviolet;
-  font-size: 42px;
-
-  /* cursor */
-  cursor: pointer;
-
-  /* mantiene el espacio que ocupa el elemento */
-  /* visibility: hidden; */
-
-  /* DISPLAY: cómo se muestra un elemento: block, inline, inline-block, none */
-  /* none: su particularidad es que no muestra el elemento ni tampoco ocupa el espacio */
-  /* display: none; */
-}
-
-.parrafo-2 {
-  color: rgb(92, 92, 233);
-  font-size: 32px;
-  font-style: italic;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: underline;
-}
-
-ul {
-  list-style: none;
-  /* si el reset nos saca las viñetas, pero las queremos */
-  /* list-style-position: inside; */
-}
-
-ul a {
-  text-decoration: none;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                  medida em                                 */
-/* -------------------------------------------------------------------------- */
 .padre {
-  font-size: 20px; /* tamaño base del padre */
+  font-size: 2rem; 
 }
 
 .hijo {
-  font-size: 1.5em; /* 1.5 × 20px = 30px */
+  font-size: 1rem; 
 }
-
-/* -------------------------------------------------------------------------- */
 
 .btn {
   padding: 0.5rem 1rem;
@@ -99,29 +35,58 @@ ul a {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  color: #f9f9f9;
+  color: #1f239d;
 }
 
-.bg-primario {
-  background-color: #4f46e5;
-}
-.bg-secundario {
-  background-color: #6b7280;
-}
-.danger {
-  background-color: #ef4444;
-}
-#titulo-footer {
-  color: rgba(219, 105, 231, 0.98);
+
+/* ----------------------- */
+/* -- Formato de Header -- */
+/* ----------------------- */
+
+header {
+  background-color: rgb(102, 176, 205);
+  
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                  CONTACTO                                  */
-/* -------------------------------------------------------------------------- */
+.header__text {
+  font-size: 2rem;
+  color: blueviolet;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
 
-/* -------------------------------------------------------------------------- */
-/*                                Estilos Form                                */
-/* -------------------------------------------------------------------------- */
+
+/* ----------------------- */
+/* -- Formato de Footer -- */
+/* ----------------------- */
+
+footer {
+  background-color:black;
+}
+
+.footer__text {
+  font-size: 42px;
+  color: blueviolet;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+/* ------------------------------------------ */
+/* -- HOME: Formato de grilla de productos -- */
+/* ------------------------------------------ */
+
+
+
+/* ------------------------------------- */
+/* -- CONTACTO: Formato de formulario -- */
+/* ------------------------------------- */
+
 .form {
   width: 50%;
   background-color: #f9f9f9;
@@ -156,11 +121,4 @@ ul a {
   /* outline: none; */
 }
 
-.form__button {
-  background: #303f9f; /* azul fuerte */
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
+
