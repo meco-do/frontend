@@ -11,6 +11,70 @@
     <nav><a href = "/pages/carrito.html">Carrito</a></nav>
     <nav><a href = "/pages/contacto.html">Contacto</a></nav>
 </header>
+
+<h4> Contactenos con sus preguntas</h4>
+
+<form
+  action="https://formspree.io/f/xeaerknj"
+  method="POST"
+>
+
+<div>
+<label for="nombre">Nombre:</label>
+<input 
+id="nombre"
+name="nombre"
+type="text"
+placeholder="Juan"
+required
+/>
+</div>  
+
+<div>
+<label for="apellido">Apellido:</label>
+<input 
+id="apellido"
+name="apellido"
+type="text"
+placeholder="Perez"
+required
+/>
+</div>  
+
+<div>
+<label for="email">Correo electronico:</label>
+<input 
+id="email"
+name="email"
+type="email"
+placeholder="juanperez@email.com"
+required
+/>
+</div> 
+
+
+<div>
+<label for="motivo">Motivo:</label>
+<select id="motivo" name="motivo"> 
+<option value=""> - Selecciona una opcion - </option>
+<option value="consulta"> Consulta </option>
+<option value="soporte"> soporte </option>
+<option value="otros"> otros </option>
+</select>
+
+</div> 
+
+<div>
+  <label>
+    Tu mensaje:
+    <textarea name="message"></textarea>
+  </label>
+  </div> 
+
+
+  <button type="submit">Enviar</button>
+</form>
+
 </body>
 </html>
 
