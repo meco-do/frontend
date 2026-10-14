@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #6991a1;
+  background: #fefefe;
   background-size: cover;
   background-position: cover;
   height: 100vh;
@@ -65,14 +65,14 @@ header {
   justify-content: space-between; 
   align-items: center;
   padding: 10px;
-  background: #6876ce;
+  background: #f19729;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .logo {
   font-size: 2rem;
   font-weight: 700;
-  color: #333;
+  color: #faf8bd;
   text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 .header__text {
-  color: #eee9e9;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.5rem;
@@ -96,7 +96,7 @@ header {
 }
 
 .header__text:hover {
-  color: #7b54e7;
+  color:  #c9dfa1;
 }
 
 .header__icon {
@@ -110,9 +110,9 @@ header {
 /* ----------------------- */
 
 footer {
-  background-color:black;
+  background-color:rgb(1, 74, 59);
   max-height: 20vh;
-  padding:1rem;
+  padding:0.5rem;
 }
 
 .footer__text {
@@ -157,10 +157,10 @@ footer {
     padding:1px;
     min-width:16rem;
     max-width:max-content;
-    background-color: rgba(252, 252, 252, 0.951);
+    background-color: rgba(240, 237, 237, 0.745);
     border-radius: 0.5rem;
     overflow: auto;
-    border: 2px solid grey;
+    border: none;
     align-items: center;
     flex:1 1 15rem;
     display:flex;
@@ -179,7 +179,7 @@ footer {
 .producto__btn {
   margin: 0.5rem;
   padding: 0.5rem;
-  background-color: black;
+  background-color: rgb(60, 59, 59);
   font-weight: bold;
   font-size: 1rem;
   border: grey;
@@ -246,7 +246,8 @@ footer {
 .form__input,
 .form__textarea {
   width: 50%;
-  border: grey;
+  border: rgb(93, 91, 91);
+  background-color: rgb(247, 245, 245);
   font-size: 1.5rem;
   border-radius: 0.5rem;
   padding:0.2rem;
@@ -258,11 +259,10 @@ footer {
   
 }
 
-
 .form__btn {
   margin: 0.5rem;
   padding: 0.5rem;
-  background-color: black;
+  background-color: rgb(40, 39, 39);
   font-weight: bold;
   font-size: 1.2rem;
   border: grey;
