@@ -51,7 +51,15 @@ h2 {
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  margin: 3rem 0;
+  margin: 2.4rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 /* Colores */
@@ -151,7 +159,7 @@ footer {
 /* -- HOME: Formato de grilla de productos -- */
 /* ------------------------------------------ */
 
-.producto__caja {
+.producto__card {
     margin:1px;
     border:1px;
     padding:1px;
