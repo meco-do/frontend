@@ -23,14 +23,6 @@ html {
   font-size: 62.5%; /* 1rem = 10px */
 }
 
-.padre {
-  font-size: 2rem; 
-}
-
-.hijo {
-  font-size: 1rem; 
-}
-
 .btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -41,25 +33,76 @@ html {
 }
 
 
+body{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+/* Colores */
+
+
 /* ----------------------- */
 /* -- Formato de Header -- */
 /* ----------------------- */
-
 header {
-  background-color: rgb(102, 176, 205);
-  max-height: 20vh;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px;
+  background: #6876ce;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav__head {
+  display: flex;        
+  align-items: center;
+  gap: 20px;           
+}
+
+.nav__head__ul {
+  display: flex;       
+  gap: 20px;
 }
 
 .header__text {
-  font-size: 2rem;
-  color: blueviolet;
-  font-weight: bold;
-  text-align: center;
-  max-height: 20vh;
+  color: #eee9e9;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+
+}
+
+.header__text:hover {
+  color: #7b54e7;
 }
 
 .header__icon {
-  max-height: 2rem;
+  width: 24px;
+  height: 24px;
+  display: block; 
 }
 
 /* ----------------------- */
@@ -69,16 +112,40 @@ header {
 footer {
   background-color:black;
   max-height: 20vh;
+  padding:1rem;
 }
 
 .footer__text {
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 
 
+/* --------------------------- */
+/* -- HOME: Formato general -- */
+/* --------------------------- */
+
+.bienvenido__titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bienvenido__parrafo{
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.productos__titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 /* ------------------------------------------ */
 /* -- HOME: Formato de grilla de productos -- */
@@ -104,7 +171,7 @@ footer {
 .producto__img {
     margin:1px;
     border:1px;
-    padding:1px;
+    padding:5px;
     overflow: auto;
     width:15rem
 }
@@ -116,7 +183,7 @@ footer {
   font-weight: bold;
   font-size: 1rem;
   border: grey;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   cursor: pointer;
   color: white;
   min-width:10rem;
